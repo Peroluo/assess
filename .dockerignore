@@ -1,0 +1,6 @@
+.DS_Store/
+.git/
+mock/
+public/
+npm-debug.log*
+core

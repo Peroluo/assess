@@ -1,0 +1,158 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+* {
+  font-family: PingFang-SC-Medium;
+}
+
+body {
+  margin: 0;
+  background-color: white !important;
+}
+
+.fixedRun {
+  position: relative;
+}
+
+.fixedRunItem {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.leftRun-enter {
+  opacity: 0;
+}
+
+.leftRun-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.leftRun-exit {
+  opacity: 1;
+}
+
+.leftRun-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.myPickModel > .am-modal-transparent,
+.myPickModel > .am-modal-content,
+.myPickModel .am-modal-body {
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.modal_black_btn {
+  font-family: PingFangSC-Regular;
+  font-size: 34px;
+  color: #333333;
+  text-align: center;
+  line-height: 34px;
+}
+
+.modal_yellow_btn {
+  font-family: PingFangSC-Regular;
+  font-size: 34px;
+  color: #fe9f02;
+  text-align: center;
+  line-height: 34px;
+}
+
+.modal_green_btn {
+  font-family: PingFangSC-Regular;
+  font-size: 34px;
+  color: #44b979;
+  text-align: center;
+  line-height: 34px;
+}
+
+.modal_grey_btn {
+  font-family: PingFangSC-Regular;
+  font-size: 34px;
+  color: #999;
+  text-align: center;
+  line-height: 34px;
+}
+
+.modal_content {
+  font-family: PingFangSC-Regular;
+  font-size: 34px;
+  color: #1e1e1e;
+  text-align: center;
+  line-height: 48px;
+}
+
+.am-picker-popup-header .am-picker-popup-header-right {
+  color: #44b979;
+}
+
+.am-picker-popup-item.am-picker-popup-header-left {
+  color: #999;
+}
+
+// 去掉input边框
+div.am-list-body::before {
+  background-color: white !important;
+}
+
+// datepicker 右侧显示
+.am-list-item .am-list-line div.am-list-extra {
+  color: #333333;
+}
+
+.am-list .am-list-item.am-textarea-item {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.fade-enter-done {
+  opacity: 1;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-exit-done {
+  opacity: 0;
+}
+
+.fadeInput-enter {
+  opacity: 0.01;
+}
+
+.fadeInput-enter.fadeInput-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fadeInput-leave {
+  opacity: 1;
+}
+
+.fadeInput-leave.fadeInput-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

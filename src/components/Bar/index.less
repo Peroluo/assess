@@ -1,0 +1,150 @@
+.vertBar {
+  display: flex;
+  .label {
+    width: 160px;
+    padding-top: 80px;
+    .labelName {
+      height: 30px;
+      width: 100%;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #333333;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+  .lineWrap {
+    flex: 1;
+    .iconWrap2 {
+      padding-bottom: 20px;
+      display: flex;
+      width: 100%;
+      div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+    .lineInner {
+      border-left: 2px dotted #ebebeb;
+      border-right: 2px dotted #ebebeb;
+      position: relative;
+      .centerLine {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 0px;
+        height: 100%;
+        border: 1px dotted #656565;
+      }
+      & > :last-child.liInnerItem {
+        margin-bottom: 0;
+      }
+      .liInnerItem {
+        height: 30px;
+        width: 100%;
+        margin-bottom: 30px;
+        z-index: 2;
+        position: relative;
+        .goodLines {
+          width: 20%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          background: #44b979;
+          transition: all 0.5s;
+        }
+        .badLines {
+          width: 20%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 30%;
+          background: #ffba15;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}
+.barWrap {
+  height: auto;
+}
+.barBox {
+  width: 100%;
+  height: 220px;
+  background: url('/images/report/bar.png');
+  background-size: 100% 100%;
+  display: flex;
+}
+.barLine {
+  height: 32px;
+  margin-top: 13.5px;
+  padding-left: 100px;
+  box-sizing: border-box;
+  display: flex;
+  div {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #656565;
+  }
+}
+.iconWrap {
+  width: 100px;
+  height: 100%;
+  img {
+    padding: 25.5px 20px;
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+}
+.imp {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  .lineItem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .lineSet {
+      width: 66px;
+      height: 100%;
+      position: relative;
+      .goodScore {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: #44b979;
+        transition: all 0.5s;
+      }
+      .badScore {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        background: #ffba15;
+        transition: all 0.5s;
+      }
+    }
+  }
+}

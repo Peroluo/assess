@@ -1,0 +1,81 @@
+.tip_box{
+  background: rgba(255,255,255,.4);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  .dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #333;
+
+  }
+  .words{
+    font-family: PingFang-SC-Medium;
+    font-size: 26px;
+    color: #333333;
+    padding:0 16px;
+  }
+
+}
+.box{
+  .box_list{
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:50px;
+    height: 240px;
+    box-sizing: border-box;
+    .list_left{
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .left_top{
+        font-family: PingFang-SC-Medium;
+        font-size: 40px;
+        color: #333333;
+        letter-spacing: 0;
+      }
+      .left_bottom{
+        font-family: PingFang-SC-Regular;
+        font-size: 24px;
+        color: #999999;
+        letter-spacing: 0;
+      }
+    }
+    .list_right{
+      height: 60px;
+      width: 60px;
+      background:url(../../../../public/images/mine/icon_go.png) center no-repeat ;
+      background-size: 100% 100%;
+      border-radius: 50%;
+    }
+  }
+
+}
+.no_record{
+  padding-top: 220px;
+  text-align: center;
+  .img{
+    display: inline-block;
+    width: 302px;
+    height: 186px;
+  }
+  .words{
+    margin-top: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #999999;
+    letter-spacing: 0;
+    text-align: center;
+    z-index: 99;
+  }
+}

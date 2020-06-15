@@ -1,0 +1,50 @@
+.game_name{
+  padding: 147px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .name{
+    font-family: PingFangSC-Medium;
+    font-size: 54px;
+    color: #333333;
+    margin-right: 30px;
+  }
+  .icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #333;
+  }
+}
+.box{
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.05);
+  position: relative;
+  padding:0 40px;
+  .rule_box{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    width: 250px;
+    height: 90px;
+    background: #333;
+    border-radius: 0 0 45px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .rule_name{
+      padding:0 20px;
+      font-family: PingFangSC-Medium;
+      font-size: 34px;
+      color: #FFFFFF;
+    }
+    .dot{
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: #fff;
+    }
+  }
+}

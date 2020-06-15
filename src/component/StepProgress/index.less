@@ -1,0 +1,105 @@
+.home {
+  min-height: 100vh;
+  background-size: 100% 360px;
+  background-repeat: no-repeat;
+  &::before {
+    content: '';
+    display: block;
+    height: 216px;
+  }
+}
+.content {
+  width: 670px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.stepItem {
+  padding: 0 30px;
+  box-sizing: border-box;
+  display: flex;
+}
+.stepItem:last-child .stepIconWrap {
+  &::before {
+    content: none;
+  }
+}
+.stepIconWrap.active {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin: 0 auto;
+    background-color: gold;
+    width: 1px;
+    height: 100%;
+    z-index: 2;
+  }
+}
+.stepIconWrap {
+  width: 36px;
+  padding-right: 30px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 77px;
+    left: 17.5px;
+    background-color: #e9e9e9;
+    width: 1px;
+    height: 100%;
+    z-index: 2;
+  }
+  .stepIcon {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    z-index: 3;
+  }
+}
+.stepContent {
+  flex: 1;
+  padding: 50px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.stepChild {
+  .stepChilItem {
+    font-size: 30px;
+    color: #333333;
+    line-height: 42px;
+    padding-top: 30px;
+  }
+  .stepChilItem:first-child {
+    padding-top: 20px;
+  }
+}
+.stepBox {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stepBox > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.stepName {
+  width: 226px;
+  font-size: 34px;
+  color: #333333;
+}
+.stepTime {
+  flex: 1;
+  font-size: 24px;
+  color: #999999;
+}
+.stepButton {
+  width: 160px;
+}
+.stepItem:last-child .stepContent {
+  border-bottom: none;
+}

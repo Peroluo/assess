@@ -1,0 +1,39 @@
+.box {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fafafa;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  .wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 380px;
+    width: 100%;
+    background: url('/images/wrap.png');
+    background-size: 100% 100%;
+  }
+  .content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    .backWrap {
+      height: 102px;
+      position: relative;
+      img {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 32px;
+        height: 32px;
+      }
+    }
+    .titleWrap {
+      font-size: 50px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.button {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 31px;
+  box-sizing: border-box;
+}
+.complete {
+  .button;
+  background: #f2f2f2;
+  color: #999999;
+}
+.waiting {
+  .button;
+  border: 2px solid #44b979;
+  color: #44b979;
+  background: white;
+}
+.running {
+  .button;
+  border: 2px solid #44b979;
+  color: #44b979;
+  background: white;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #43b877;
+    border-radius: 31px 0 0 31px;
+    opacity: 0.2;
+  }
+}

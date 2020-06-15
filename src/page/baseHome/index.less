@@ -1,0 +1,215 @@
+.home {
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 380px;
+    width: 100%;
+    background: url('/images/banner.png');
+    background-size: 100% 100%;
+  }
+}
+.stepWrap {
+  width: 16px;
+  position: absolute;
+  z-index: 10;
+  top: 85px;
+  left: 30px;
+  .circle {
+    width: 16px;
+    height: 16px;
+    background: url('/images/circle03.png');
+    background-size: 100% 100%;
+  }
+  .activeLine {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:after {
+      width: 2px;
+      height: 100%;
+      background: #ffba15;
+      content: '';
+    }
+  }
+  .defaultLine {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:after {
+      width: 2px;
+      height: 100%;
+      background: #ccc;
+      content: '';
+    }
+  }
+  .noCircle {
+    width: 16px;
+    height: 16px;
+    background: url('/images/circle02.png');
+    background-size: 100% 100%;
+  }
+  .defaultCircle {
+    width: 16px;
+    height: 16px;
+    background: url('/images/circle01.png');
+    background-size: 100% 100%;
+  }
+}
+.modelBtn {
+  font-size: 34px;
+  color: #44b979;
+}
+.modelContent {
+  text-align: center;
+  font-size: 34px;
+  color: #1e1e1e;
+}
+
+.box {
+  position: relative;
+  .titleDes {
+    height: 218px;
+  }
+  .content {
+    height: auto;
+    padding: 0 40px;
+    .ceceList {
+      width: 100%;
+      background: white;
+      box-shadow: 0 0.08rem 0.26667rem 0 rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      .firtCeceItem {
+        height: 190px;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        .studentFix {
+          width: 148px;
+          height: 40px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 20px 0 20px 0;
+          background: rgba(255, 186, 21, 0.5);
+          font-size: 24px;
+          color: #333333;
+          text-align: center;
+          line-height: 40px;
+        }
+      }
+      & .itemName {
+        flex: 1;
+        padding-left: 76px;
+        height: 100%;
+        font-size: 36px;
+        color: #333333;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+      }
+      & .btnWrap {
+        padding-right: 30px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .ceceItem {
+        background-size: 100% 100%;
+        height: 180px;
+        display: flex;
+      }
+    }
+
+    .parentCe {
+      margin-top: 40px;
+      height: 180px;
+      box-shadow: 0 0.08rem 0.26667rem 0 rgba(0, 0, 0, 0.1);
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      .fix {
+        width: 148px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px 0 20px 0;
+        background: rgba(255, 186, 21, 0.5);
+        font-size: 24px;
+        color: #333333;
+        text-align: center;
+        line-height: 40px;
+      }
+      & .itemName {
+        flex: 1;
+        padding-left: 76px;
+        height: 100%;
+        font-size: 36px;
+        color: #333333;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+      }
+      & .btnWrap {
+        padding-right: 30px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 90px;
+        left: 30px;
+      }
+    }
+
+    .fixFoot {
+      height: 130px;
+      padding: 40px 0;
+      background: #ffffff;
+      width: 100%;
+      box-sizing: border-box;
+      div {
+        margin: 0 auto;
+        background: #44b979;
+        border-radius: 45px;
+        width: 560px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        color: white;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+.home2 {
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 380px;
+    width: 100%;
+    background: url('/images/banner1.png');
+    background-size: 100% 100%;
+  }
+}

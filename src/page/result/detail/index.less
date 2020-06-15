@@ -1,0 +1,134 @@
+#detail {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #fafafa;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    background: url('/images/wrap.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 0 50px;
+
+    .title {
+      height: 112px;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 26px;
+        height: 32px;
+      }
+    }
+
+    .titleName {
+      font-size: 50px;
+      color: #ffffff;
+      font-size: 50px;
+      line-height: 70px;
+      padding-bottom: 50px;
+    }
+
+    .score {
+      background: #ffffff;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      padding: 40px;
+
+      .scoreLine {
+        position: relative;
+        height: 118px;
+
+        .label {
+          position: absolute;
+          top: 46px;
+          left: 0;
+          font-size: 26px;
+          line-height: 40px;
+          color: #333333;
+          width: 104px;
+        }
+
+        .scoreDesc {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 450px;
+          height: 118px;
+        }
+      }
+
+      .scoreBox {
+        padding-top: 8px;
+
+        .diffBox {
+          font-size: 24px;
+          color: #333333;
+          line-height: 42px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+
+    .textWrap {
+      margin-top: 20px;
+      padding: 0 40px 40px;
+      background: #ffffff;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+    }
+  }
+}
+
+.titleWrap {
+  padding-top: 40px;
+
+  .titleTag {
+    position: relative;
+    font-size: 30px;
+    color: #333333;
+    height: 42px;
+    line-height: 42px;
+
+    &::before {
+      content: '';
+      width: 20px;
+      height: 10px;
+      background: #44b979;
+      position: absolute;
+      top: 16px;
+      left: -40px;
+    }
+  }
+
+  & > .textBody {
+    padding-top: 22px;
+    font-size: 24px;
+    color: #656565;
+    line-height: 42px;
+  }
+}
+
+.endNotice {
+  font-size: 24px;
+  color: #999999;
+  line-height: 114px;
+  height: 114px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+}

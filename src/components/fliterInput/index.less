@@ -1,0 +1,97 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filterInputWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: white;
+  .inputWrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    input {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      border: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      outline: none;
+      font-size: 30px;
+      color: #333333;
+      font-weight: bolder;
+    }
+    input::-webkit-input-placeholder {
+      color: #cccccc;
+      font-weight: normal;
+    }
+    .clear {
+      width: 50px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+.inputWrap {
+  height: 122px;
+  font-size: 30px;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  position: relative;
+  .inputLabel {
+    width: auto;
+    height: 100%;
+    color: #999999;
+    .center;
+  }
+  .inputBody {
+    flex: 1;
+    height: 98%;
+    color: #333333;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 122px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .recommenWrap {
+    width: 100%;
+    position: absolute;
+    top: 123px;
+    left: 0;
+    z-index: 10;
+    max-height: 400px;
+    overflow-y: auto;
+    background: white;
+    box-shadow: 0 0 0.26667rem 0 rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    box-sizing: border-box;
+    .filterItem {
+      display: flex;
+      height: 100px;
+      line-height: 100px;
+      font-size: 26px;
+      .left {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .right {
+        width: auto;
+        color: #cccccc;
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+.buttonWrap {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .btnType {
+    width: 300px;
+    height: 90px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 34px;
+    color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .startBtn {
+    background: #ffdc00;
+  }
+  .testBtn {
+    background: white;
+    border: 2px solid #333333;
+  }
+}
+
+.imgCosa {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.playTitleWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+.complete {
+  height: 90px;
+  background: #44b979;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.progress {
+  height: 80px;
+  margin-top: 10px;
+  // .progressInner {
+  //   position: fixed;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   height: 120px;
+  //   background: white;
+  //   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+  // }
+}
+.testNotice {
+  font-size: 24px;
+  color: #999999;
+  line-height: 36px;
+  padding-top: 40px;
+}
+.answerList {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  .answerItem {
+    width: 246px;
+    height: 110px;
+    margin-top: 40px;
+    display: flex;
+    .circleWrap {
+      width: 56px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .circle {
+        width: 36px;
+        height: 36px;
+        border: 2px solid #cccccc;
+        border-radius: 36px;
+        box-sizing: border-box;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .itemImg {
+      width: 190px;
+      height: 110px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .answerItem:nth-child(2n) {
+    margin-left: 78px;
+  }
+}
+
+.submitBtn {
+  width: 110px;
+  height: 52px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 26px;
+  border-radius: 26px;
+  font-size: 28px;
+  color: #44b979;
+  .center;
+}
+.loadingImg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(51, 51, 51, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+
+  .loadingImgCircle {
+    width: 7em;
+    height: 8.4em;
+    border: 3px solid transparent;
+    border-top-color: #44b979;
+    border-bottom-color: #44b979;
+    border-radius: 50%;
+    animation: spin-stretch 2s ease infinite;
+  }
+  .progressVal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+  }
+}
+
+@keyframes spin-stretch {
+  50% {
+    transform: rotate(360deg) scale(0.4, 0.33);
+    border-width: 8px;
+  }
+  100% {
+    transform: rotate(720deg) scale(1, 1);
+    border-width: 3px;
+  }
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result {
+  padding-bottom: 60px;
+  .title {
+    .center;
+    width: 250px;
+    height: 90px;
+    margin: 0 auto;
+    background: #333333;
+    border-radius: 0 0 45px 45px;
+    color: white;
+    div.circle {
+      width: 10px;
+      height: 10px;
+      background: white;
+      border-radius: 10px;
+    }
+    .titleName {
+      margin: 0 20px;
+      font-size: 34px;
+      color: #ffffff;
+    }
+  }
+  .score {
+    margin-top: 150px;
+    margin-bottom: 28px;
+    color: #fe9f02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    span {
+      margin-left: 10px;
+      font-size: 40px;
+    }
+  }
+  .otherdiv {
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 10px;
+    text-align: center;
+    span {
+      color: black;
+    }
+  }
+  .btnWrap {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .goHome {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #969696;
+    text-align: center;
+  }
+}
+.errorWrap {
+  padding: 0 45px;
+  .notices {
+    font-size: 30px;
+    color: #333333;
+  }
+  .rightUse {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+.coustomesToast {
+  width: 400px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.clockTitle {
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

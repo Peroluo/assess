@@ -1,0 +1,209 @@
+.resultPage {
+  min-height: 100vh;
+  background: white url(/img/resutlHeaBg.png) no-repeat;
+  background-size: 100% 360px;
+  padding: 0 40px 90px;
+  box-sizing: border-box;
+}
+.resultTitle {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 130px;
+    height: 100px;
+  }
+  div {
+    margin-left: 16px;
+    font-size: 46px;
+    color: #ffffff;
+  }
+}
+.content {
+  background: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  width: 670px;
+}
+
+// 专注力结果
+.concentration {
+  padding: 60px 40px 80px;
+}
+.achievementTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #333333;
+  height: 44px;
+  &::before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    margin-right: 20px;
+    background: linear-gradient(270deg, #44b979 0%, rgba(68, 185, 121, 0) 100%);
+  }
+  &::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    margin-left: 20px;
+    transform: scaleX(-1);
+    background: linear-gradient(270deg, #44b979 0%, rgba(68, 185, 121, 0) 100%);
+  }
+}
+
+.bestAchie {
+  padding-top: 20px;
+  font-size: 100px;
+  color: #ffba15;
+  text-align: center;
+  span {
+    margin-left: 7px;
+    font-size: 60px;
+  }
+}
+.avgUse {
+  font-size: 30px;
+  color: #999999;
+  padding: 30px 0 20px;
+  display: flex;
+}
+.allUseTime {
+  font-size: 30px;
+  color: #333333;
+  text-align: center;
+}
+.useTimeItem {
+  padding-bottom: 10px;
+  display: flex;
+}
+.label {
+  width: 350px;
+  text-align: right;
+}
+.value {
+  flex: 1;
+  text-align: left;
+}
+.useTimeItem:last-child {
+  padding-bottom: 0;
+}
+.description {
+  margin: 44px auto 0;
+  width: 590px;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-size: 26px;
+  color: #656565;
+  line-height: 40px;
+}
+.btn {
+  width: 500px;
+  margin: 90px auto 0;
+}
+
+.memoryContent {
+  padding: 80px 40px 100px;
+  .score {
+    font-size: 100px;
+    color: #ffba15;
+    text-align: center;
+    line-height: 100px;
+    span {
+      font-size: 40px;
+      color: #ffba15;
+      line-height: 72px;
+      padding-left: 9px;
+    }
+  }
+  .subScore {
+    padding-top: 20px;
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+  }
+  .modescription {
+    margin-top: 40px;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-size: 26px;
+    color: #656565;
+    line-height: 40px;
+  }
+  .btnWrap {
+    margin-top: 280px;
+  }
+}
+
+// 记忆力测评
+.memcontent {
+  box-sizing: border-box;
+  padding: 80px 40px 100px;
+}
+.achveBox {
+  padding: 40px 0 50px;
+}
+.achveItem {
+  font-size: 30px;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 42px;
+  span {
+    color: #ffba15;
+    padding: 0 4px;
+  }
+}
+.achveItem:last-child {
+  padding-bottom: 0;
+}
+
+.descriptionMro {
+  width: 590px;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-size: 26px;
+  color: #656565;
+  line-height: 40px;
+  div {
+    margin-top: 20px;
+  }
+}
+
+.interjectResult {
+  height: 892px;
+  padding-top: 80px;
+  position: relative;
+  .score {
+    padding-top: 20px;
+    font-size: 100px;
+    color: #ffba15;
+    text-align: center;
+    line-height: 100px;
+  }
+  .description {
+    width: 590px;
+    margin: 40px auto 0;
+    padding: 20px 30px;
+    background: #fafafa;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  .btnWrap {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

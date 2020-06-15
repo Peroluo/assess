@@ -1,0 +1,79 @@
+.ModalWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/resultBg.png) no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.5s;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  &::before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+    right: 30px;
+  }
+  span {
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 44px;
+  }
+  &::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    transform: scaleX(-1);
+    background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+    left: 30px;
+  }
+}
+
+.content {
+  border-radius: 20px;
+  min-height: 300px;
+  width: 500px;
+  background: white url(/img/result.png) no-repeat;
+  background-size: 100% 266px;
+  background-position: 0 0;
+  padding: 0 55px 60px;
+  box-sizing: border-box;
+}
+
+.progameTitle {
+  font-size: 32px;
+  color: #333333;
+  text-align: center;
+  line-height: 44px;
+  padding: 100px 0 10px;
+}
+.useTime {
+  font-size: 80px;
+  color: #ffba15;
+  text-align: center;
+  padding-bottom: 20px;
+  span {
+    font-size: 40px;
+    color: #ffba15;
+    text-align: center;
+  }
+}
+
+.discription {
+  font-size: 26px;
+  color: #656565;
+  line-height: 38px;
+  padding-bottom: 80px;
+}

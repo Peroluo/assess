@@ -1,0 +1,70 @@
+.box {
+  .title {
+    font-size: 30px;
+    color: #999999;
+  }
+  .body {
+    padding-top: 50px;
+    height: 660px;
+    position: relative;
+    & > .item:last-child {
+      margin-bottom: 0;
+    }
+    .item {
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      .circle {
+        width: 14px;
+        padding-right: 20px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::after {
+          width: 14px;
+          height: 14px;
+          background: url('/images/circle03.png');
+          background-size: 100% 100%;
+          content: '';
+        }
+      }
+      .msg {
+        flex: 1;
+        font-size: 30px;
+        color: #333333;
+        line-height: 48px;
+      }
+    }
+    .foot {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0px;
+      display: flex;
+      justify-content: space-between;
+      div {
+        font-size: 34px;
+        color: #333333;
+        width: 260px;
+        height: 90px;
+        text-align: center;
+        line-height: 90px;
+        border-radius: 45px;
+        box-sizing: border-box;
+        &.leftBtn {
+          border: 2px solid #333333;
+          background: white;
+        }
+        &.rightBtn {
+          color: white;
+          background-color: #44b979;
+          &.only {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}

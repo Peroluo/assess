@@ -1,0 +1,137 @@
+.mine_page{
+  height: 100vh;
+  background: url(../../../../public/images/wrap.png) center top no-repeat;
+  background-size: 100% 380px;
+  .content{
+    padding: 60px 50px 0px;
+    .avatar_box{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height:112px ;
+      .avatar{
+        height: 112px;
+        width: 112px;
+        background-size: 112px 112px;
+        border-radius: 50%;
+      }
+      .phone{
+        margin-left: 30px;
+        font-family: PingFang-SC-Medium;
+        font-size: 34px;
+        color: #333333;
+        letter-spacing: 0;
+      }
+    }
+    .info_box{
+      position: relative;
+      margin-top: 60px;
+      background:url(../../../../public/images/mine/box_bg.png) right center no-repeat;
+      background-size: 100% 100%;
+      box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+      border-radius: 20px;
+      padding: 70px 0 20px 70px;
+      .info_title{
+        position: absolute;
+        left:0;
+        top:0;
+        height: 40px;
+        line-height: 40px;
+        width: 146px;
+        background: #FE9F02;
+        text-align: center;
+        border-radius: 20px 0 20px 0;
+        font-family: PingFang-SC-Medium;
+        font-size: 24px;
+        color: #FFFFFF;
+      }
+      .info_list_wrap{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        :first-child{
+          width: 220px;
+        }
+      }
+      .info_list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        height: 40px;
+        font-family: PingFang-SC-Regular;
+        font-size: 28px;
+        color: #333333;
+        div:first-of-type{
+          height:40px;
+          width: 70px;
+        }
+        .icon_sex{
+          background: url(../../../../public/images/mine/icon_sex.png) left center no-repeat;
+          background-size: 34px 28px;
+        }
+        .icon_name{
+          background: url(../../../../public/images/mine/icon_name.png) left center no-repeat;
+          background-size: 30px 32px;
+        }
+        .icon_school{
+          background: url(../../../../public/images/mine/icon_school.png) left center no-repeat;
+          background-size: 30px 30px;
+        }
+        .icon_birth{
+          background: url(../../../../public/images/mine/icon_birth.png) left center no-repeat;
+          background-size: 30px 32px;
+        }
+        .icon_phone{
+          background: url(../../../../public/images/mine/icon_phone.png) left center no-repeat;
+          background-size: 26px 34px;
+        }
+
+      }
+    }
+    .test_record{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 40px;
+      margin-top: 40px;
+      .left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .icon{
+          display: inline-block;
+          height: 36px;
+          width: 36px;
+          background: url(../../../../public/images/mine/icon_record.png) center no-repeat;
+          background-size: 100% 100%;
+        }
+        .left_words{
+          font-family: PingFang-SC-Medium;
+          font-size: 30px;
+          color: #333333;
+          margin-left: 30px;
+          margin-right: 6px;
+
+        }
+      }
+      .right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .num{
+          font-family: PingFang-SC-Regular;
+          font-size: 26px;
+          color: #999999;
+          margin-right: 20px;
+        }
+        .arrow{
+          width: 14px;
+          height: 26px;
+          background: url(../../../../public/images/mine/icon_arrow.png) center no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}

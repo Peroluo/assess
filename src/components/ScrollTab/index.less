@@ -1,0 +1,75 @@
+.tabsContent {
+  height: 90px;
+  background-color: #fafafa;
+}
+.tabsFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: white;
+  z-index: 10;
+  box-shadow: 0 5px 20px 0 rgba(153, 153, 153, 0.2);
+  .fixLine {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 18%;
+    background: #44b979;
+    transition: left 0.5s;
+  }
+}
+.tabsWrap {
+  height: 90px;
+  display: flex;
+  background: white;
+  & > :nth-last-child(1) {
+    &::after {
+      content: none !important;
+    }
+  }
+  .tabItem {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 36px;
+    font-size: 30px;
+    color: #333333;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 33px;
+      right: -2px;
+      height: 24px;
+      width: 2px;
+      background: #cccccc;
+    }
+  }
+  .activeTabItem {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #44b979;
+    line-height: 36px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 33px;
+      right: -2px;
+      height: 24px;
+      width: 2px;
+      background: #cccccc;
+    }
+  }
+}
+.scrollTabItem {
+  height: auto;
+}

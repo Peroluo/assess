@@ -1,0 +1,155 @@
+// import { Component } from 'react';
+// import { connect } from 'dva';
+// import { getWxUserInfos, getAppId } from '@/services/api';
+// import initReactFastclick from 'react-fastclick';
+// import jsonp from '@/components/jsonp';
+// import wxShare from '@/components/wxShare';
+// import Track from '@/utils/track';
+// import trackMap from '@/assets/trackMap';
+// import Poster from '@/components/Poster';
+// import Loading from '@/components/Loading';
+
+// @connect(({ globalStat }) => ({ globalStat }))
+// class BasicLayout extends Component {
+//   constructor(props) {
+//     super(props);
+
+//     this.state = {
+//       show: true,
+//     };
+//   }
+//   componentDidMount() {
+//     window.onpageshow = function (event) {
+//       if (event.persisted && !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
+//         window.location.reload();
+//       }
+//     };
+//     // this.getCode();
+//     this.fixIosClick();
+//     initReactFastclick();
+//   }
+
+//   // fix Ios键盘收起后，click失效的问题
+//   fixIosClick() {
+//     if (!!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
+//       document.addEventListener(
+//         'blur',
+//         (e) => {
+//           if (['input', 'textarea'].includes(e.target.localName)) {
+//             let id = setTimeout(function () {
+//               window.scrollTo(0, window.pageYOffset);
+//               clearTimeout(id);
+//             }, 200);
+//           }
+//         },
+//         true,
+//       );
+//     }
+//   }
+//   // 设置微信分享
+//   setWxConfig() {
+//     const link = window.location.href;
+//     jsonp('/learn/param', { url: encodeURIComponent(link) }, (res) => {
+//       const wxConfig = res;
+//       const title = 'MECE学习力诊断';
+//       const desc = '道道MECE学习力诊断系统，给你的学习做次全面“体检”';
+//       const imgUrl =
+//         'https://oss-file-bucket.oss-cn-hangzhou.aliyuncs.com/node-img/360-huanping/share.png';
+//       const jsUrl = '//res.wx.qq.com/open/js/jweixin-1.2.0.js';
+//       let success = () => {};
+//       new wxShare({ title, desc, link, imgUrl, jsUrl, wxConfig, success });
+//     });
+//   }
+//   // 微信登录授权
+//   async getCode() {
+//     var local = window.location.origin; // 获取页面url
+//     const appId = await getAppId({ channel: 0 });
+//     const appid = appId.data; // appid
+//     let paCode = this.getUrlCode().code || ''; // 截取code
+//     const stateParmas = this.getUrlCode().state;
+//     const { isAuth, login } = this.props.globalStat;
+//     const redictUrl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${appid}&redirect_uri=${local}&response_type=code&scope=snsapi_userinfo&state=${stateParmas}&connect_redirect=1#wechat_redirect`;
+//     window.localStorage.setItem('state', `state=${stateParmas}`);
+//     if (paCode || isAuth) {
+//       // 未登录获取用户信息
+//       if (!login) {
+//         const { code, data } = await getWxUserInfos({
+//           code: paCode,
+//           version: this.props.globalStat.ceType,
+//         });
+//         if (code === 0) {
+//           const { isRegister, unionId, openId, wxuser, user, isActivated } = data;
+//           this.props.dispatch({
+//             type: 'globalStat/setData',
+//             isAuth: true,
+//             userInfo: user,
+//             unionId,
+//             isRegister,
+//             openId,
+//             isActivated,
+//             wxUserInfo: JSON.parse(wxuser),
+//           });
+//           if (user) {
+//             Track.init({
+//               initBasic: { ...user, ...{ wxUserInfo: JSON.parse(wxuser) } }, //额外的基础数据
+//             });
+//           }
+//         } else {
+//           // 授权失败，重新授权
+//           window.location.replace(encodeURI(redictUrl));
+//         }
+//       }
+//     } else {
+//       // 跳转到公众号授权登录
+//       window.location.replace(encodeURI(redictUrl));
+//     }
+//   }
+
+//   getUrlCode() {
+//     const url = window.location.search;
+//     let parmas = {};
+//     if (url.indexOf('?') !== -1) {
+//       let str = url.substr(1);
+//       let strs = str.split('&');
+//       for (let i = 0; i < strs.length; i++) {
+//         parmas[strs[i].split('=')[0]] = strs[i].split('=')[1];
+//       }
+//     }
+//     return parmas;
+//   }
+
+//   trackFnc = () => {
+//     const name = typeof document !== 'undefined' ? document.location.pathname : '';
+//     if (trackMap[name]) {
+//       Track.tcFnc({
+//         name: trackMap[name],
+//         extra: {},
+//         type: 'view',
+//       });
+//     }
+//   };
+
+//   render() {
+//     const { children } = this.props;
+//     const { ceType, isAuth } = this.props.globalStat;
+//     const { show } = this.state;
+//     this.trackFnc();
+//     // this.setWxConfig();
+//     // if (show) {
+//     //   return (
+//     //     <Poster
+//     //       type={ceType}
+//     //       onClose={() => {
+//     //         this.setState({ show: false });
+//     //       }}
+//     //     />
+//     //   );
+//     // } else {
+//     //   if (!isAuth) {
+//     //     return <Loading />;
+//     //   }
+//     return children;
+//     // }
+//   }
+// }
+// export default BasicLayout;

@@ -1,0 +1,499 @@
+.report {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fafafa;
+  z-index: 1;
+  .wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 380px;
+    width: 100%;
+    background: url('/images/report/reportg.png');
+    background-size: 100% 100%;
+  }
+  .content {
+    position: relative;
+    height: auto;
+    .backWrap {
+      padding-left: 45px;
+      height: 138px;
+      display: flex;
+      align-items: center;
+      .backBtn {
+        width: 1.33333rem;
+        height: 100%;
+        position: relative;
+        display: flex;
+        img {
+          position: absolute;
+          left: 0;
+          top: 50px;
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+    .simpleReport {
+      width: 690px;
+      height: 200px;
+      margin: 104px auto 0;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      background: white;
+      background-image: url('/images/report/msgCard.png');
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding: 55px 40px;
+      box-sizing: border-box;
+      display: flex;
+      .userIcon {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+      }
+      .userMsg {
+        padding-left: 30px;
+        flex: 1;
+        div {
+          span {
+            color: #979797;
+            font-size: 22px;
+          }
+        }
+        & > div:nth-child(1) {
+          font-size: 28px;
+          color: #656565;
+          line-height: 40px;
+        }
+        & > div:nth-child(2) {
+          margin-top: 10px;
+          line-height: 30px;
+          font-size: 22px;
+          color: #999999;
+        }
+      }
+    }
+    .none {
+      height: 20px;
+    }
+  }
+}
+.caseContent {
+  padding-top: 20px;
+  position: relative;
+  .lineWrap {
+    background: white;
+    padding: 0 30px 20px;
+    box-sizing: border-box;
+    .lineContent {
+      background: #fafafa;
+      border-radius: 12px;
+      height: 100%;
+      .lineTitle {
+        width: 200px;
+        height: 40px;
+        background: #ffdd8a;
+        border-radius: 12px 0 12px 0;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: #333;
+        align-items: center;
+      }
+      .showLineWrap {
+        margin-top: 40px;
+        padding: 0 30px;
+      }
+      .results {
+        font-size: 26px;
+        color: #333333;
+        margin-top: 30px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(68, 185, 121, 0.05);
+      }
+    }
+  }
+  .meceWrap {
+    background: #fafafa;
+    .meceItem {
+      height: 180px;
+      padding: 30px 30px 30px 40px;
+      box-sizing: border-box;
+      background: white;
+      margin-bottom: 2px;
+      box-shadow: 0 1px 0 0 #f2f2f2;
+      display: flex;
+      .meceIcon {
+        width: 90px;
+        img {
+          height: 80px;
+          margin: 0 auto 8px;
+          width: 80px;
+          display: block;
+        }
+        span {
+          display: block;
+          font-size: 22px;
+          color: #333333;
+          text-align: center;
+          line-height: 40px;
+          margin: 0 auto;
+        }
+      }
+      .meceMsgWrap {
+        flex: 1;
+        padding-left: 40px;
+        .meceImpo {
+          font-size: 30px;
+          color: #333333;
+          line-height: 42px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 470px;
+          .meceImpoMsg {
+            display: inline;
+            margin-right: 30px;
+            span {
+              font-size: 36px;
+              color: #44b979;
+              padding-right: 2px;
+            }
+          }
+        }
+        .meceDeil {
+          width: 408px;
+          margin-top: 10px;
+          font-size: 24px;
+          color: #999999;
+          line-height: 40px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .suggesionWrap {
+    padding: 0 30px 30px;
+    background: white;
+    .suggesion {
+      width: 690px;
+      height: 356px;
+      margin: 0 auto;
+    }
+  }
+  .suggesionTitle {
+    font-size: 24px;
+    color: #999999;
+    line-height: 32px;
+    padding: 30px 30px 40px 30px;
+    background-color: white;
+  }
+  .suggestCaseWrap {
+    background: white;
+    .suggestCaseItem {
+      display: flex;
+      padding: 0 30px;
+      .caseLabel {
+        width: 92px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30px;
+        .tag {
+          width: 100%;
+          height: 32px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          font-size: 20px;
+          text-align: center;
+          border-radius: 6px;
+        }
+        .case1Tag {
+          .tag;
+          color: rgba(255, 58, 58, 1);
+          background-color: rgba(255, 58, 58, 0.05);
+          border: 2px solid rgba(255, 58, 58, 0.3);
+        }
+        .case2Tag {
+          .tag;
+          color: rgba(250, 130, 1, 1);
+          background-color: rgba(250, 130, 1, 0.05);
+          border: 2px solid rgba(250, 130, 1, 0.3);
+        }
+        .case3Tag {
+          .tag;
+          color: rgba(254, 190, 15, 1);
+          background-color: rgba(254, 190, 15, 0.05);
+          border: 2px solid rgba(254, 190, 15, 0.3);
+        }
+      }
+      .caseCircle {
+        width: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .circle1 {
+          position: absolute;
+          background: rgba(255, 58, 58, 1);
+          top: 12px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          z-index: 3;
+        }
+        .circle2 {
+          position: absolute;
+          background: rgba(250, 130, 1, 1);
+          top: 12px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          z-index: 3;
+        }
+        .circle3 {
+          position: absolute;
+          background: rgba(254, 190, 15, 1);
+          top: 12px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          z-index: 3;
+        }
+        .line {
+          position: absolute;
+          top: 12px;
+          left: 7px;
+          width: 2px;
+          height: 100%;
+          background: #ebebeb;
+          z-index: 1;
+          margin: 0 auto;
+        }
+      }
+      .caseMsg {
+        flex: 1;
+        padding-left: 30px;
+        margin-bottom: 20px;
+        .title {
+          font-size: 28px;
+          color: #333333;
+          line-height: 40px;
+        }
+        .eventCase {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          font-size: 24px;
+          color: #656565;
+          div {
+            padding-right: 30px;
+            height: 34px;
+            width: 220px;
+            display: flex;
+            align-items: center;
+            span {
+              color: #44b979;
+              font-size: 26px;
+              margin: 0 4px 0 4px;
+            }
+          }
+        }
+      }
+      .caseMsg2 {
+        flex: 1;
+        padding-left: 30px;
+        margin-bottom: 40px;
+        font-size: 28px;
+        color: #333333;
+        line-height: 40px;
+        .titleName {
+          width: 150px;
+          display: inline-block;
+        }
+        .proWr {
+          margin-left: 30px;
+          font-size: 24px;
+          color: #656565;
+        }
+        .num {
+          margin: 0 4px;
+          color: #44b979;
+        }
+      }
+    }
+  }
+  .doWithCase {
+    font-size: 24px;
+    color: #999999;
+    padding: 0 30px;
+    background: white;
+    line-height: 32px;
+  }
+  .doWithCaseWrap {
+    padding: 30px 30px 40px;
+    background: white;
+  }
+  .doWithCaseItem {
+    background: #ffffff;
+    box-shadow: 0 5px 20px 0 rgba(153, 153, 153, 0.2);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    .doWidthTitle {
+      padding: 30px 0 10px;
+      display: flex;
+      justify-content: space-between;
+      line-height: 64px;
+      .tag {
+        height: 64px;
+        padding: 0 30px;
+        width: auto;
+        background: #44b979;
+        border-radius: 0 100px 100px 0;
+        font-size: 26px;
+        color: #ffffff;
+      }
+      .doCase {
+        flex: 1;
+        text-align: right;
+        font-size: 24px;
+        color: #656565;
+        padding-right: 30px;
+        span {
+          color: #44b979;
+          margin: 0 4px;
+        }
+      }
+    }
+    .caseEventWrap {
+      padding: 0 30px;
+      .caseEventItem {
+        height: 202px;
+        border-bottom: 2px solid #f2f2f2;
+        box-sizing: border-box;
+        display: flex;
+        .caseWraper {
+          flex: 1;
+          .doWidthAny {
+            padding-top: 30px;
+            font-size: 30px;
+            color: #333333;
+            line-height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .doWidthAnyTitle {
+              flex: 1;
+            }
+          }
+          .doWithUseAny {
+            margin: 10px 0 20px;
+            font-size: 20px;
+            color: #656565;
+            display: flex;
+            height: 28px;
+            line-height: 28px;
+            span {
+              margin: 0 8px;
+            }
+          }
+          .doWithRes {
+            font-size: 24px;
+            color: #999;
+            width: 480px;
+            line-height: 34px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+      & > :last-child {
+        height: 200px;
+        border-bottom: none;
+      }
+    }
+  }
+}
+.casePlan {
+  width: 100%;
+  height: 1200px;
+  background: url('/images/report/caseplan.png');
+  background-size: 100% 100%;
+  position: relative;
+  .btn {
+    width: 610px;
+    height: 90px;
+    background: #44b979;
+    border-radius: 45px;
+    font-size: 34px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 70px;
+    bottom: 708px;
+  }
+}
+.caseTitle {
+  height: 125px;
+  font-size: 32px;
+  color: #333333;
+  line-height: 125px;
+  background: white;
+  text-align: center;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 58px;
+    left: 220px;
+    width: 60px;
+    height: 19px;
+    content: '';
+    background: url(/images/report/titleSsr1.png);
+    background-size: 100% 100%;
+  }
+  &::after {
+    position: absolute;
+    top: 58px;
+    right: 220px;
+    width: 60px;
+    height: 19px;
+    content: '';
+    background: url(/images/report/titleSsr2.png);
+    background-size: 100% 100%;
+  }
+}
+.caseTitle2 {
+  .caseTitle;
+  background: transparent;
+}
+
+.overNull {
+  padding: 40px 0 60px;
+  background: white;
+  img {
+    width: 260px;
+    height: 238px;
+    margin: 0 auto;
+    display: block;
+  }
+  div {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #656565;
+    line-height: 32px;
+    text-align: center;
+  }
+}

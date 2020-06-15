@@ -1,0 +1,86 @@
+@import '../styles/index.less';
+
+.btn {
+  width: 500px;
+  background: @primaryColor;
+  height: 90px;
+  border-radius: 50px;
+  font-size: 34px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 90px;
+  display: block;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+  text-decoration: none !important;
+  &.xs {
+    width: 610px;
+  }
+  &.x {
+    width: 550px;
+  }
+  &.m {
+    width: 390px;
+  }
+  &.xm {
+    width: 265px;
+  }
+  &.disabled {
+    background: #a2dcbc;
+  }
+  &.disabled:active {
+    background: #a2dcbc;
+  }
+  &:active {
+    background: #2f9a5f;
+  }
+  &.minHe {
+    width: 240px;
+    height: 80px;
+    line-height: 80px;
+  }
+}
+.ghost {
+  border: 1px solid #44b979;
+  border-radius: 54.5px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 34px;
+  color: #44b979;
+  display: block;
+  width: 500px;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+  text-decoration: none !important;
+  &.xs {
+    width: 610px;
+  }
+  &.x {
+    width: 550px;
+  }
+  &.m {
+    width: 390px;
+  }
+  &.xm {
+    width: 265px;
+  }
+  &.disabled:active {
+    border: 1px solid #44b979;
+    color: #44b979;
+  }
+  &:active {
+    border-color: rgba(68, 185, 121, 0.7);
+    color: rgba(68, 185, 121, 0.7);
+  }
+  &.minHe {
+    width: 240px;
+    height: 80px;
+    line-height: 80px;
+  }
+}

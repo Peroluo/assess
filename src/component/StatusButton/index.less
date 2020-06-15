@@ -1,0 +1,47 @@
+.statusButton {
+  width: 160px;
+  height: 60px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  line-height: 60px;
+  text-align: center;
+}
+.complete {
+  background: rgba(68, 185, 121, 0.15);
+  color: #44b979;
+}
+.watting {
+  color: #999999;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  &::before {
+    border-radius: 60px;
+  }
+}
+
+.start {
+  color: #44b979;
+  border: 1px solid #44b979;
+  overflow: hidden;
+  &::before {
+    border-radius: 60px;
+  }
+}
+.running {
+  color: #44b979;
+  border: 1px solid #43b877;
+  overflow: hidden;
+  &::after {
+    content: '';
+    opacity: 0.2;
+    position: absolute;
+    background-color: #43b877;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  &::before {
+    border-radius: 60px;
+  }
+}

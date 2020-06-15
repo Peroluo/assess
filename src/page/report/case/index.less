@@ -1,0 +1,218 @@
+.caseBox {
+  margin-top: 40px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  .tag {
+    width: 172px;
+    height: 40px;
+    background: rgba(255, 186, 21, 0.4);
+    border-radius: 20px 0 20px 0;
+    font-size: 22px;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .seeBox {
+    padding: 0 30px 40px;
+    .totalDes {
+      margin-top: 30px;
+      height: 48px;
+      font-size: 34px;
+      color: #333333;
+      line-height: 48px;
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 30px;
+      }
+      .color0 {
+        color: #ff3a3a;
+      }
+      .color1 {
+        color: #ff3a3a;
+      }
+      .color2 {
+        color: #fa8201;
+      }
+      .color3 {
+        color: #febe0f;
+      }
+      .color4 {
+        color: #7ecd48;
+      }
+      .color5 {
+        color: #0eb575;
+      }
+    }
+
+    img {
+      width: 36px;
+      height: 36px;
+    }
+    .inTotal {
+      font-size: 24px;
+      color: #999999;
+      line-height: 32px;
+      padding: 10px 0 12px;
+    }
+    .result {
+      span {
+        color: #333;
+        font-weight: bold;
+      }
+      padding: 20px;
+      background: #fafafa;
+      border-radius: 6px;
+      font-size: 26px;
+      color: #999;
+      line-height: 37px;
+    }
+  }
+}
+.diffList {
+  margin-top: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  .diffAny {
+    font-size: 24px;
+    color: #333333;
+    line-height: 32px;
+    padding: 30px 30px 0;
+    span {
+      padding: 0 4px;
+      color: #44b979;
+    }
+  }
+  .diffWrap {
+    margin-top: 10px;
+    & > :last-child.diffItem {
+      border-bottom: none;
+    }
+    .diffItem {
+      border-bottom: 2px solid #f2f2f2;
+      padding-bottom: 20px;
+      .diffTitle {
+        padding: 29px 30px 20px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+        & > div:nth-of-type(1) {
+          padding-left: 30px;
+          font-size: 30px;
+          color: #333333;
+          flex: 1;
+          font-weight: bold;
+        }
+        & > div:nth-of-type(2) {
+          width: auto;
+          font-size: 24px;
+          color: #999999;
+        }
+      }
+      .diffSee {
+        width: 630px;
+        margin: 0 auto;
+        background: #fafafa;
+        padding: 24px 20px;
+        box-sizing: border-box;
+        line-height: 38px;
+        font-size: 24px;
+        display: flex;
+        & > div:nth-child(1) {
+          flex: 1;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #999;
+          font-weight: 200;
+          span {
+            color: #333333;
+            font-size: 26px;
+            font-weight: bold;
+          }
+        }
+        & > div:nth-child(2) {
+          width: auto;
+          color: #44b979;
+        }
+      }
+    }
+  }
+}
+.moreWrap {
+  .moreDetav {
+    background: rgba(68, 185, 121, 0.1);
+    border: 2px solid #44b979;
+    border-radius: 45px;
+    width: 610px;
+    height: 82px;
+    margin: 40px auto;
+    font-size: 30px;
+    color: #44b979;
+    line-height: 80px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  padding-bottom: 20px;
+}
+.goodsCase {
+  .goodsCaseItem {
+    height: 148px;
+    box-sizing: border-box;
+    border-top: 2px solid #f2f2f2;
+    display: flex;
+    .icon {
+      width: 144px;
+      height: 144px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .goodsCaseItemIn {
+      flex: 1;
+      padding-right: 20px;
+      box-sizing: border-box;
+      .topWrap {
+        display: flex;
+        height: 42px;
+        padding: 29px 0 6px;
+        font-size: 30px;
+        color: #333333;
+        line-height: 42px;
+        font-weight: bold;
+        & > div:nth-child(1) {
+          flex: 1;
+        }
+      }
+      .btWrap {
+        width: 410px;
+        font-size: 24px;
+        color: #656565;
+        text-align: justify;
+        height: 38px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 38px;
+      }
+    }
+    .moreMsg {
+      margin-right: 20px;
+    }
+  }
+}
+.bar {
+  padding-bottom: 40px;
+}
